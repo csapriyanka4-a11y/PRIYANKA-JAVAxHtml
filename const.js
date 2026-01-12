@@ -1,3 +1,7 @@
-let a=6;
-let b=-9;
-console.log
+function test() {
+    if (true) {
+        const a=60;
+    }
+    console.log(a); //
+}
+test ();
