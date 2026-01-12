@@ -1,0 +1,9 @@
+D="DIVISION";
+A=97;
+B=13;
+C=78;
+D=52;
+console.log(D);
+console.log(B/A);
+console.log(B/C);
+console.log(B/D);

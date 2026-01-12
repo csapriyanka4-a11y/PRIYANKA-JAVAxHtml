@@ -1,0 +1,9 @@
+M="MULTIPLICATION";
+A=633;
+B=95;
+C=888;
+E=666;
+console.log(M);
+console.log(A*B*C);
+console.log(B*C);
+console.log(A*B*C*E);
