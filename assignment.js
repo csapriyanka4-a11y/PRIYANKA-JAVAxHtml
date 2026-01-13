@@ -1,0 +1,11 @@
+let P="My assignment Operator Program";
+let q=60;
+let s=56;
+console.log(P);
+console.log(q+=s);
+console.log(q-=s);
+console.log(q%=s);
+console.log(q**=s);
+console.log(q%=s);
+console.log(q/=s);
+console.log(q*=s);
