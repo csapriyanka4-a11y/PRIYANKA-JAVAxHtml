@@ -25,8 +25,6 @@ console.log(a);
 console.log(b!==d);
 
 
-
-
 q="greater than equal to";
 p=666;
 q=333;

@@ -1,0 +1,15 @@
+//If...else nested
+let age=18;
+let aadharcard=true;
+if (age>=18) {
+console.log("He/She is eligible for Child Artist");
+if(aadharcard){
+    console.log("He/She is eligible for Senior artist")
+}
+else {
+    console.log("He/She is Minor");
+}
+}
+
+
+

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Program</title>
+</head>
+<body>
+   <center> <table border="6" bgcolor="lightyellow"> </center>
+        <tr> <td>
+    
+    <center><h1> <font color="black">CALCULATOR</font></h1></center>
+    num1
+    <input id="Num1">
+    num2
+    <input id="Num2">
+     Operator
+     <input id="operator">
+     <button onclick="Calculator()">submit</button>
+     <center><p id="result">result</p></center>
+      <script>
+        function Calculator(){
+            let p=parseInt(document.getElementById("Num1").value);
+            let q=parseInt(document.getElementById("Num2").value);
+            let operator=document.getElementById("operator").value;
+            
+            let result="";
+            if(operator=="+"){
+    result= p+q;
+   }
+   else if (operator =="-"){
+    result= p-q;
+   }
+   else if (operator =="*"){
+    result=p*q;
+   }
+   else if (operator =="**"){
+    result= p**q;
+   }
+else if(operator =="%"){
+   result= p%q;
+   }
+   else
+   {
+    result="Provide result";
+   }
+   
+              //document.write(result)
+            document.getElementById("result").innerHTML=result;
+}
+      </script>
+
+</body>
+</tr> </td>
+</table>
+</html>

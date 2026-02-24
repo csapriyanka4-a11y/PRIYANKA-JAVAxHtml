@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <center><h2>Registration Form</h2></center>
+    <form onsubmit="return validateForm()">
+    Name:<br>
+   <input type="text" id="Name"><br><br>
+    Email:<br>
+    <input type="text" id="Email"><br><br>
+    Mobile:<br>
+    <input type ="text" id="Mobile"><br><br>
+    OTP:<br>
+    <input type ="text" id="OTP"><br><br>
+    <input type="submit" value="submit">
+    </form>
+    <script>
+    function validateForm(){
+    var Name=document.getElementById("Name").value;
+    var Email=document.getElementById("Email").value;
+    var Mobile=document.getElementById("Mobile").value;
+        //Name Validation
+        if(Name==""){
+            alert ("Please Enter Your Name");
+            return false;
+        //Email Validation
+    if (Email === "" || !Email.includes("@") || !Email.includes(".")) {
+    alert("Please Enter Valid Email");
+    return false;
+}
+         }
+        }
+        if(mobile.length!=10 || isNAN(Mobile)){
+            alert ("Please Enter Valid 10-digit mobile")
+            return false;
+        }
+        alert("Form Submitted Successfully!");
+        return true;
+    
+    </script> 
+</body>
+</html>

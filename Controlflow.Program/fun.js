@@ -11,7 +11,9 @@ function multiplication(p,q){
     return p*q;
 }
 function division(p,q){
-    console.log("not divisible by zero")
+    if(q===0){
+    return "number is not divided by zero";
+    }
     return p/q; 
 }
 function expo(p,q){

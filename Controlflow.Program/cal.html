@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR PROGRAM</title>
+</head>
+<body>
+    <script>
+ function addition(p,q){
+    return p+q;
+}
+function subtraction(p,q){
+    return p-q;
+}
+function multiplication(p,q){
+    return p*q;
+}
+function division(p,q){
+    return p/q;
+  (q===0) ("number is not divisible by zero")  
+}
+function expo(p,q){
+    return p**q;
+}
+function modulus(p,q){
+    return p%q;
+}  
+
+function calculator(p, operator, q){
+switch(operator) {
+case "+":
+return addition(p,q);
+case "-":
+return subtraction(p,q);
+case "*":
+return multiplication(p,q);
+case "**":
+return expo(p,q);
+case "/":
+return (p/q);
+case "%":
+return modulus(p,q);
+
+    }
+
+}
+document.write("addition=",calculator(20,"+",8,"<br>"));
+document.write("subtraction=",calculator(52,"-",9,"<br>"));
+
+    </script>
+</body>
+</html>
